@@ -3,7 +3,7 @@
   <node pkg="svo_ros" type="vo" name="svo" clear_params="true" output="screen" launch-prefix="gdb -ex run --args">
 
     <!-- Camera topic to subscribe to -->
-    <param name="cam_topic" value="/px4_2/camera/image_raw" type="str" />
+    <param name="cam_topic" value="/camera/image_raw" type="str" />
 
     <!-- Camera calibration file -->
     <rosparam file="$(find svo_ros)/param/bluefox_722_px4_atan.yaml" />
